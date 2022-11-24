@@ -1,15 +1,14 @@
 package controladores;
 
 public class Jugador {
-        private  int id;
-        private String nombre;
-       private String apellidos;
-       private int edad;
-       private  String pocision;
-       private  String equipoquejuega;
+    private int id;
+    private String nombre;
+    private String apellidos;
+    private String posicionJugador;
+    private int edad;
+    private String equipoJuega;
 
-    public Jugador(String nombre) {
-        this.nombre = nombre;
+    public Jugador() {
     }
 
     public int getId() {
@@ -36,6 +35,14 @@ public class Jugador {
         this.apellidos = apellidos;
     }
 
+    public String getPosicionJugador() {
+        return posicionJugador;
+    }
+
+    public void setPosicionJugador(String posicionJugador) {
+        this.posicionJugador = posicionJugador;
+    }
+
     public int getEdad() {
         return edad;
     }
@@ -44,23 +51,11 @@ public class Jugador {
         this.edad = edad;
     }
 
-    public String getPocision() {
-        return pocision;
+    public String getEquipoJuega() {
+        return equipoJuega;
     }
 
-    public void setPocision(String pocision) {
-        this.pocision = pocision;
-    }
-
-    public String getEquipoquejuega() {
-        return equipoquejuega;
-    }
-
-    public void setEquipoquejuega(String equipoquejuega) {
-        this.equipoquejuega = equipoquejuega;
-    }
-
-    public Jugador() {
-
+    public void setEquipoJuega(String equipoJuega) {
+        this.equipoJuega = equipoJuega;
     }
 }
